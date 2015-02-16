@@ -5,7 +5,7 @@ sys.path.append('./tests')
 
 __author__ = 'KAWASAKI Yasukazu (yakawa)'
 __email__ = 'kawasaki@dev.kawa1128.jp'
-__version__ = '0.0.1.0'
+__version__ = '0.0.1.2'
 
 setup(
   name='PyWMOFiles',
@@ -15,7 +15,7 @@ setup(
   author_email=__email__,
   long_description=open('README.md').read(),
   license='MIT',
-  keywords=['BUFR', 'CREX', 'WMO', 'TAC', 'Parser'],
+  keywords=['BUFR', 'WMO', 'Parser'],
   url='https://github.com/yakawa/PyWMOFiles',
   install_requires=[
   ],
