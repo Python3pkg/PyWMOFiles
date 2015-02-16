@@ -8,15 +8,15 @@ __email__ = 'kawasaki@dev.kawa1128.jp'
 __version__ = '0.0.1.0'
 
 setup(
-  name='PyBufCrex',
+  name='PyWMOFiles',
   version=__version__,
-  description='BUFR/CREX read module',
+  description='Files defined by WMO  read module',
   author=__author__,
   author_email=__email__,
   long_description=open('README.md').read(),
   license='MIT',
-  keywords=['BUFR', 'CREX', 'WMO', 'Parser'],
-  url='https://github.com/yakawa/PyBufrCrex',
+  keywords=['BUFR', 'CREX', 'WMO', 'TAC', 'Parser'],
+  url='https://github.com/yakawa/PyWMOFiles',
   install_requires=[
   ],
   tests_require=[
@@ -24,7 +24,8 @@ setup(
   package_dir={'': 'src'},
   packages=find_packages('src'),
   include_package_data=True,
-  test_suite='testPyBufrCrex.suite',
+  package_data={'': ['tables/*.json']},
+  test_suite='testPyWMOFiles.suite',
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Science/Research',
